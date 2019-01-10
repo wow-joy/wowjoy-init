@@ -1,6 +1,6 @@
 {
   "name": "wowjoy-init",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "华卓CLI",
   "main": "index.js",
   "bin": {
