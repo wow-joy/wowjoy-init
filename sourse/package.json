@@ -51,7 +51,7 @@
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
-    "styled-components": "3.x",
+    "styled-components": "4.x",
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
@@ -59,7 +59,7 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3",
     "wowjoy-component": "^3.0.0",
-    "wowjoy-ui": "^0.9.4"
+    "wowjoy-ui": "^0.10.1"
   },
   "scripts": {
     "start": "node scripts/start.js",
