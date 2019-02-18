@@ -59,7 +59,7 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3",
     "wowjoy-component": "^3.0.0",
-    "wowjoy-ui": "^0.10.1"
+    "wowjoy-ui": "^0.11.5"
   },
   "scripts": {
     "start": "node scripts/start.js",

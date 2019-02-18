@@ -40,13 +40,15 @@ function start(sourcePath) {
   const startTime = new Date();
   copyRecursive(sourcePath, processPath)
     .then(() => {
-      const endTime = new Date();
-      console.log(
-        "over useTime: ",
-        ((endTime - startTime) / 1000).toFixed(2),
-        "s"
-      );
-      process.exit();
+      setTimeout(()=>{
+        const endTime = new Date();
+        console.log(
+          "over useTime: ",
+          ((endTime - startTime) / 1000).toFixed(2),
+          "s"
+        );
+        process.exit();
+      },500)
     })
     .catch(err => {
       console.log("copyRecursive ERROR", err);
