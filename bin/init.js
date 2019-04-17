@@ -40,15 +40,13 @@ function start(sourcePath) {
   const startTime = new Date();
   copyRecursive(sourcePath, processPath)
     .then(() => {
-      setTimeout(()=>{
-        const endTime = new Date();
-        console.log(
-          "over useTime: ",
-          ((endTime - startTime) / 1000).toFixed(2),
-          "s"
-        );
-        process.exit();
-      },500)
+      const endTime = new Date();
+      console.log(
+        "over useTime: ",
+        ((endTime - startTime) / 1000).toFixed(2),
+        "s"
+      );
+      process.exit();
     })
     .catch(err => {
       console.log("copyRecursive ERROR", err);
@@ -112,7 +110,7 @@ function copyRecursive(sourcePath, processPath) {
 }
 
 function copyFile(sourcePath, target) {
-  new Promise(res => {
+  return  new Promise(res => {
     if (/(package\.json|readme\.md)/i.test(sourcePath)) {
       fs.readFile(sourcePath, "utf8", (err, data) => {
         if (err) throw err;
